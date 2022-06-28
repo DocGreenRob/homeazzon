@@ -1,0 +1,117 @@
+<ion-content class="sign-in" style="position:relative !important;">
+  <img src="../../../../assets/imgs/sign-in/homeazzon-logo-sign-in.png" class="sign-in-logo" />
+  <br />
+  <br />
+  <div>
+    <ion-segment color="primary" [(ngModel)]="type" (ionChange)="segmentChanged($event)" scrollable>
+      <ion-segment-button value="register"
+                          class="register-segment-button"
+                          checked>
+        <ion-label>Register</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="sign-in"
+                          class="sign-in-segment-button">
+        <ion-label>Sign In</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="type"
+       class="segment-content">
+    <div *ngSwitchCase="'register'">
+      <ion-row>
+        <ion-col col-12>
+          <h3>Enter Your First and Last Name</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <ion-label>First Name</ion-label>
+          <div class="divBorder">
+            <ion-input type="text" [(ngModel)]="firstName" placeholder="Enter your first name"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <ion-label>Last Name</ion-label>
+          <div class="divBorder">
+            <ion-input type="text" [(ngModel)]="firstName" placeholder="Enter your first name"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <ion-button color="dark" expand="full">Next</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <h4>Or you can use one of these to register</h4>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          <img src="../../../../assets/imgs/sign-in/apple-sign-in-circle.png" class="sign-in-logo" />
+        </ion-col>
+        <ion-col col-4>
+          <img src="../../../../assets/imgs/sign-in/fb-sign-in-circle.png" class="sign-in-logo" />
+        </ion-col>
+        <ion-col col-4>
+          <img src="../../../../assets/imgs/sign-in/google-sign-in-circle.png" class="sign-in-logo" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          © homeazzon.com, Inc. All rights reserved.
+        </ion-col>
+      </ion-row>
+    </div>
+    <div *ngSwitchCase="'sign-in'">
+      <ion-row>
+        <ion-col col-12>
+          <ion-label>Email</ion-label>
+          <div class="divBorder">
+            <ion-input type="text" [(ngModel)]="email" placeholder="Enter your email" class="sign-in-email"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <ion-label>Password</ion-label>
+          <div class="divBorder">
+            <ion-input type="password" [(ngModel)]="password" placeholder="Enter your password" class="sign-in-password"></ion-input>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <p>
+            Forgot your password? <span class="click-here" style="color:blue !important;">Click here</span>
+          </p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <ion-button color="dark" expand="full">Sign In</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          <img src="../../../../assets/imgs/sign-in/apple-sign-in-circle.png" class="sign-in-logo" />
+        </ion-col>
+        <ion-col col-4>
+          <img src="../../../../assets/imgs/sign-in/fb-sign-in-circle.png" class="sign-in-logo" />
+        </ion-col>
+        <ion-col col-4>
+          <img src="../../../../assets/imgs/sign-in/google-sign-in-circle.png" class="sign-in-logo" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          © homeazzon.com, Inc. All rights reserved.
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

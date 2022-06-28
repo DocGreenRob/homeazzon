@@ -1,0 +1,45 @@
+.welcome-image {
+  position: absolute;
+  width: 25em;
+  height: 19em;
+  left: -.375em;
+  top: 6.375em;
+}
+
+.page {
+  /*position: relative;
+  width: 390px;
+  height: 844px;*/
+  background: linear-gradient(147.09deg, #61C0E9 1.35%, #67D1D8 57.71%) !important;
+  max-height: 100% !important;
+  overflow: none !important;
+}
+
+.welcome-text {
+  /*width: 21.875em;
+  height: 2.6875em;
+  left: 1.25em;
+  top: 32.5em;*/
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5625em;
+  line-height: 2.9375em;
+  /*display: flex;*/
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.get-started {
+  position: absolute;
+  width: 349.78px;
+  height: 45px;
+  left: 20px;
+  top: 747px;
+  /* True White */
+
+  background: #FFFFFF;
+  box-shadow: 0px -2px 20px rgba(24, 36, 41, 0.1);
+  border-radius: 7px;
+}

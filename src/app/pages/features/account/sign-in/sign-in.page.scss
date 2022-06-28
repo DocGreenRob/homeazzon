@@ -1,0 +1,29 @@
+.sign-in {
+  background: linear-gradient(147.09deg, #61C0E9 1.35%, #67D1D8 57.71%);
+  position: absolute;
+  /*width: 390px;
+  height: 844px;*/
+}
+
+.sign-in-logo {
+  top: 2em;
+  left: 4em;
+}
+
+ion-segment-button {
+  --indicator-box-shadow: transparent !important;
+  --background: white;
+  --color: #2d2e87;
+  --background-checked: linear-gradient(to right, #2d2e87, #0083CB) !important;
+  --color-checked: white;
+  border-radius: .5rem !important;
+  padding: 2px;
+  margin: 0;
+}
+
+.segment-content {
+  position: absolute !important;
+  bottom: 0 !important;
+  background-color: #fff !important;
+  width: 100% !important;
+}
